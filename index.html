@@ -1,0 +1,53 @@
+<!--
+
+Copyright 2017 Matthew Knight
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en" data-ng-app="prizeApp">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Reward Table</title>
+
+        <script src="lib/angularjs/1.6.2/angular.js"></script>
+        <script src="js/prizeController.js"></script>
+
+        <link href="lib/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/prizeController.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container" data-ng-controller="PrizeController as prize">
+            <div class="page-header">
+                <h1>Select Your Reward &nbsp; <small><small>Click on an item to see its details</small></small></h1>
+            </div>
+            <div class="row">
+                <div class="col-md-9">
+                    <img data-ng-repeat="item in prize.prizes" data-ng-class="item.isSelected ? 'highlightPrize' : ''" data-ng-src="{{item.url}}" alt="{{item.name}}" class="img-thumbnail" data-ng-click="prize.selectPrize(item)">
+                </div>
+                <div class="col-md-3">
+                    <h2>{{prize.selectedPrize.name}}</h2>
+                    {{prize.selectedPrize.description}}
+                    <div>
+                        <a class="lead spellLink" data-ng-repeat="spell in prize.selectedPrize.spells" href={{spell.url}}>{{spell.name}}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
