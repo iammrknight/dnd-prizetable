@@ -28,12 +28,12 @@ angular.module('prizeApp', []).controller('PrizeController', ['$filter', functio
             {
                 "name": "Ironwood 3-Section Staff",
                 "url": "img/ironwoodstaff.jpg",
-                "description": "+1 three-section staff (quarterstaff), made of Willowdale Ironwood"
+                "description": "Magical +1 three-section staff (quarterstaff), made of Willowdale Ironwood.  Damage is 1d6+1 bludgeoning, Versatile (1d8+1)."
             },
             {
                 "name": "Eyes of the Eagle",
                 "url": "img/eagleeyes.jpg",
-                "description": "These crystal lenses fit over the eyes. While wearing them, you have advantage on Wisdom (Perception) checks that rely on sight. In conditions of clear visibility, you can make out details of even extremely distant creatures and objects as small as 2 feet across."
+                "description": "These crystal lenses fit over the eyes. While wearing them, you have advantage on Wisdom (Perception) checks that rely on sight, and advantage on saving throws against being Blinded. In conditions of clear visibility, you can make out details of even extremely distant creatures and objects as small as 2 feet across."
             },
             {
                 "name": "Stone of Good Luck",
@@ -43,12 +43,12 @@ angular.module('prizeApp', []).controller('PrizeController', ['$filter', functio
             {
                 "name": "Mithral Scale Mail",
                 "url": "img/mithralscalemail.jpg",
-                "description": "AC 14 + Dex (Max 2), Mithral is a light, flexible metal, so this armor can be worn under normal clothes. Mithral armor does not impose disadvantage on Dexterity (Stealth) checks or have a Strength requirement."
+                "description": "Magical Scale Mail medium armor. AC is 14 + Dex (Max 2). Mithral is a light, flexible metal, so this armor can be worn under normal clothes. Mithral armor does not impose disadvantage on Dexterity (Stealth) checks or have a Strength requirement."
             },
             {
                 "name": "Whalebone Pan Pipes",
                 "url": "img/panpipes.jpg",
-                "description": "+1 Bard spell focus, when you use the instrument to cast a spell that causes targets to becomed charmed on a failed save, the targets have disadvantage on the saving throw. Once per day can cast one of the following spells: Barkskin, Cure Wounds, Fog Cloud.",
+                "description": "Magical +1 Bard spell focus, when you use the instrument to cast a spell that causes targets to becomed charmed on a failed save, the targets have disadvantage on the saving throw. Once per day can cast one of the following spells: Barkskin, Cure Wounds, Fog Cloud.",
                 "spells": [
                     {
                         "name": "Barkskin",
@@ -67,7 +67,7 @@ angular.module('prizeApp', []).controller('PrizeController', ['$filter', functio
             {
                 "name": "Ironwood Lyre",
                 "url": "img/ironwoodlyre.jpg",
-                "description": "+1 Bard spell focus, when you use the instrument to cast a spell that causes targets to becomed charmed on a failed save, the targets have disadvantage on the saving throw. Once per day can cast one of the following spells: Entangle, Faerie Fire, Shillelagh, Speak with Animals.",
+                "description": "Magical +1 Bard spell focus, when you use the instrument to cast a spell that causes targets to becomed charmed on a failed save, the targets have disadvantage on the saving throw. Once per day can cast one of the following spells: Entangle, Faerie Fire, Shillelagh, Speak with Animals.",
                 "spells": [
                     {
                         "name": "Entangle",
@@ -90,7 +90,18 @@ angular.module('prizeApp', []).controller('PrizeController', ['$filter', functio
             {
                 "name": "Rod of the Pact Keeper",
                 "url": "img/pactkeeper.jpg",
-                "description": "+1 Warlock spell focus, you can regain one warlock spell slot as an action while holding the rod.  You can't use this property again until you finish a long rest."
+                "description": "Magical +1 Warlock spell focus, you can regain one warlock spell slot as an action while holding the rod. You can't use this property again until you finish a long rest."
+            },
+            {
+                "name": "Masterwork Dueling Rapier",
+                "url": "img/duelingrapier.jpg",
+                "description": "Magical +1 rapier, made of shining enchanted silver. Once per day can can cast Compelled Duel, saving throw is DC 13 Wisdom. Martial and Finesse type weapon, damage is 1d8+1 piercing.",
+                "spells": [
+                    {
+                        "name": "Compelled Duel",
+                        "url": "http://engl393-dnd5th.wikia.com/wiki/Compelled_Duel"
+                    }
+                ]
             },
             {
                 "name": "Boots of Elvenkind",
@@ -106,6 +117,21 @@ angular.module('prizeApp', []).controller('PrizeController', ['$filter', functio
                 "name": "Gloves of Swimming and Climbing",
                 "url": "img/swimmingandclimbing.jpg",
                 "description": "While wearing these gloves, climbing and swimming don't cost you extra Movement, and you gain a +5 bonus to Strength (Athletics) checks made to climb or swim."
+            },
+            {
+                "name": "Frostweave Robe",
+                "url": "img/masterworkrobe.jpg",
+                "description": "These robes are considered magical armor.  While wearing these robes you have resistance to frost damage, ignore difficult terrain created by ice or snow, and can tolerate temperatures as low as -50 degrees Fahrenheit without any additional protection."
+            },
+            {
+                "name": "Ironwood Bow",
+                "url": "img/ironwoodbow.jpg",
+                "description": "Magical +1 longbow, made of Willowdale Ironwood.  Damage is 1d8+1 piercing, range 150/600, heavy, two-handed."
+            },
+            {
+                "name": "Basilisk Leather Armor",
+                "url": "img/basiliskleather.jpg",
+                "description": "Magical +1 leather armor, light armor, AC is 12 + Dex Modifier.  Made of basilisk leather, the wearer has advantage on saving throws against being petrified."
             }
         ];
 
